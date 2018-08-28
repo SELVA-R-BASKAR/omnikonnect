@@ -6,13 +6,6 @@
   </li>
 </ul>
 </div>
-<div *ngIf="selectedCity">
-<h2>{{selectedCity.name | uppercase}} Details</h2>
-<div><span>code: </span>{{selectedCity.code}}</div>
-<div><span>name: </span>{{selectedCity.name}}</div>
- <div>
-  <label>
-    <input [(ngModel)]="city.name" placeholder="name">
-  </label>
-</div>
-</div>
+
+
+<app-city-detail [city]="selectedCity"> </app-city-detail>
