@@ -4,7 +4,7 @@ import { FormsModule} from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { CitiesComponent } from './components/cities/cities.component';
-import { CityDetailComponent } from './city-detail/city-detail.component';
+import { CityDetailComponent } from './components/city-detail/city-detail.component';
 
 
 @NgModule({
