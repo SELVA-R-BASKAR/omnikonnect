@@ -1,0 +1,18 @@
+<div><h2>My Cities</h2>
+<ul class="cities">
+    <!-- The *ngFor is Angular's repeater directive. It repeats the host element for each element in a list. -->
+  <li *ngFor="let city of cities" [class.selected]="city === selectedCity" (click)="onSelect(city)">
+    <span class="badge">{{city.code}} </span>{{city.name}}
+  </li>
+</ul>
+</div>
+<div *ngIf="selectedCity">
+<h2>{{selectedCity.name | uppercase}} Details</h2>
+<div><span>code: </span>{{selectedCity.code}}</div>
+<div><span>name: </span>{{selectedCity.name}}</div>
+ <div>
+  <label>
+    <input [(ngModel)]="city.name" placeholder="name">
+  </label>
+</div>
+</div>
